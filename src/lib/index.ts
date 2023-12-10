@@ -1,7 +1,7 @@
 import type React from "react";
 import { useState } from "react";
 
-export default function useInput(state: string, limit?: number) {
+export default function useFlexibleInput(state: string, limit?: number) {
   const [value, setValue] = useState(state);
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
